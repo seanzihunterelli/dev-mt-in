@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Lora;
+}
+button{
+  margin      : 0;
+  padding     : 0;
+  border      : 0;
+  background  : transparent;
+  font-family : inherit;
+  font-size   : 1em;
+  cursor      : pointer;
+}
+
+  button::-moz-focus-inner{
+    padding : 0;
+    border  : 0;
+  }
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+hr {
+  border-color: inherit;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 38.4px;
+  color: #272727;
+  line-height: 46px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #000000;
+  line-height: 34px;
+}
+h3 {
+  font-size: 28px;
+  color: #272727;
+  line-height: 34px;
+}
+h4 {
+  font-size: 19.8px;
+  color: #232323;
+  line-height: 24px;
+}
+h5 {
+  font-size: 16.8px;
+  color: #FFFFFF;
+  line-height: 21px;
+}
+h6 {
+  font-size: 16.8px;
+  color: #232323;
+  line-height: 21px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  display: block;
+  left: 5%;
+  border-bottom: thin solid #ececec;
+}
+  .heading {
+    display: inline-flex;
+    justify-content: space-between;
+    height: 10%;
+    padding: 10px;
+    width: 100%;
+  }
+  .menu-item {
+    width: 5%;
+    text-align: center;
+    display: flex;
+  }
+  .title-text {
+    font-family: 'Lora', serif;
+    font-size: 16.8px;
+    line-height: 21px;
+    color: #272727;
+    text-align: center;
+    width: 75%;
+    display: flex;
+}
+main {
+  visibility: hidden;
+  position: absolute;
+  top: 70px;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+}
+  .blue {
+    color: #74fdf2;
+  }
+  .no-data {
+    visibility: visible;
+  }
+  .left-pane {
+    display: inline-block;
+    width: 40%;
+    padding: 0;
+    text-align: center;
+  }
+    #welcome {
+      width: 100%;
+      display: block;
+      font-size: 12.07px;
+      line-height: 14px;
+      color: #232323;
+      margin-bottom: 20px;
+    }
+    .enter-info {
+      width: 100%;
+      display: block;
+      font-size: 15.96px;
+      line-height: 19px;
+      color: #b6b6b6;
+    }
+      .enter-info > input {
+        width: 100%;
+        display: block;
+        padding: 5px 5px;
+        margin: 10px 0px;
+        border: thin solid #e3e3e3;
+      }
+      .enter-info > textarea {
+        width: 100%;
+        height: 150px;
+        display: block;
+        padding: 5px 5px;
+        margin: 10px 0px;
+        border: thin solid #e3e3e3;
+      }
+      .enter-info > button {
+        display: block;
+        width: 100%;
+        height: 30px;
+        background-color: #74fdf2;
+        font-size: 13.44px;
+        line-height: 17px;
+        color: #9a9a9a;
+      }
+  .right-pane {
+    display: inline-flex;
+    width: 60%;
+    padding: 0;
+    margin: 5px;
+    text-align: center;
+  }
+    .rear-triangle {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      height: 350px;
+      width: 500px;
+      clip-path: polygon(60% 0, 24% 73%, 95% 78%);
+    }
+    .grey-triangle {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      height: 350px;
+      width: 500px;
+      background-color: #d8d8d8;
+      clip-path: polygon(60% 0, 24% 73%, 95% 78%);
+      opacity: .80;
+    }
+    .blue-triangle {
+      background-color: #74fdf2;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      height: 400px;
+      width: 500px;
+      clip-path: polygon(84.6% 28.3%, 22.5% 37.2%, 64.9% 97.5%);
+    }
+    .front-triangle {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      height: 400px;
+      width: 500px;
+      clip-path: polygon(84.6% 28.3%, 22.5% 37.2%, 64.9% 97.5%);
+    }
+    .blue-shadow {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      height: 400px;
+      width: 500px;
+      background-color: #888888;
+      clip-path: polygon(85% 28%, 22% 37%, 65% 98%);
+      opacity: .25;
+    }
+    #profile-triangle {
+      opacity: .50;
+    }
+
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  display: inline-block;
+  left: 5%;
+  color: #a9a9a9;
+  border-top: 2px solid #ececec;
+}
+  .navbar {
+    display: inline-flex;
+    padding: 10px 5%;
+    width: 32%;
+    justify-content: space-between;
+    color: #a9a9a9;
+  }
+  .navbuttons {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13.2px;
+    color: #a9a9a9;
+    line-height: 18px;
+    width: 100%;
+    text-align: center;
+  }
