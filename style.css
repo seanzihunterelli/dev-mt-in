@@ -38,32 +38,41 @@ h1 {
   font-size: 38.4px;
   color: #272727;
   line-height: 46px;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 28px;
   color: #000000;
   line-height: 34px;
+  font-weight: 400;
 }
 h3 {
   font-size: 28px;
   color: #272727;
   line-height: 34px;
+  font-weight: 400;
 }
 h4 {
   font-size: 19.8px;
   color: #232323;
   line-height: 24px;
+  font-weight: 400;
 }
 h5 {
   font-size: 16.8px;
   color: #FFFFFF;
   line-height: 21px;
+  font-weight: 400;
 }
 h6 {
   font-size: 16.8px;
   color: #232323;
   line-height: 21px;
+  font-weight: 400;
+}
+.container {
+
 }
 
 header {
@@ -96,7 +105,6 @@ header {
     display: flex;
 }
 main {
-  visibility: hidden;
   position: absolute;
   top: 70px;
   width: 90%;
@@ -114,6 +122,8 @@ main {
     width: 40%;
     padding: 0;
     text-align: center;
+    height: 600px;
+    overflow: hidden;
   }
     #welcome {
       width: 100%;
@@ -129,6 +139,7 @@ main {
       font-size: 15.96px;
       line-height: 19px;
       color: #b6b6b6;
+      font-weight: 400;
     }
       .enter-info > input {
         width: 100%;
@@ -154,60 +165,97 @@ main {
         line-height: 17px;
         color: #9a9a9a;
       }
+    .myfullname {
+      padding: 0 10px;
+      text-align: left;
+      display: block;
+      width: 100%;
+    }
+    .mytagline {
+      font-family: "Open Sans", sans-serif;
+      font-size: 10.2px;
+      font-weight: 700;
+      text-align: justify;
+      line-height: 14px;
+      color: #000000;
+      text-transform: uppercase;
+      display: block;
+      padding: 0 10px;
+    }
+    .mybio {
+      display: block;
+      text-align: justify;
+      padding: 0 10px;
+    }
   .right-pane {
-    display: inline-flex;
-    width: 60%;
+    display: inline-block;
+    width: 400px;
     padding: 0;
     margin: 5px;
     text-align: center;
   }
     .rear-triangle {
-      position: absolute;
-      top: 0px;
-      right: 0;
-      height: 350px;
-      width: 500px;
-      clip-path: polygon(60% 0, 24% 73%, 95% 78%);
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 400px;
+    width: 400px;
+    background:
+      linear-gradient(
+        rgba(216,216,216,0.60),
+        rgba(216,216,216,0.60)
+      ),
+      url(images/background.jpg);
+    clip-path: polygon(60% 0, 16% 60%, 100% 65%);
     }
-    .grey-triangle {
-      position: absolute;
-      top: 0px;
-      right: 0;
-      height: 350px;
-      width: 500px;
-      background-color: #d8d8d8;
-      clip-path: polygon(60% 0, 24% 73%, 95% 78%);
-      opacity: .80;
-    }
+
     .blue-triangle {
       background-color: #74fdf2;
       position: absolute;
       top: 0px;
       right: 0;
       height: 400px;
-      width: 500px;
-      clip-path: polygon(84.6% 28.3%, 22.5% 37.2%, 64.9% 97.5%);
+      width: 400px;
+      clip-path: polygon(99.5% 28.3%, 15% 37.2%, 64.9% 97.5%);
     }
     .front-triangle {
       position: absolute;
       top: 0px;
       right: 0;
       height: 400px;
-      width: 500px;
-      clip-path: polygon(84.6% 28.3%, 22.5% 37.2%, 64.9% 97.5%);
+      width: 400px;
+      clip-path: polygon(99.5% 28.3%, 15% 37.2%, 64.9% 97.5%);
     }
     .blue-shadow {
       position: absolute;
       top: 0px;
       right: 0;
       height: 400px;
-      width: 500px;
+      width: 400px;
       background-color: #888888;
-      clip-path: polygon(85% 28%, 22% 37%, 65% 98%);
+      clip-path: polygon(100% 28%, 14.5% 37%, 65% 98%);
       opacity: .25;
     }
     #profile-triangle {
       opacity: .50;
+    }
+    .friend-nav {
+      display: block;
+    }
+    .friends-list {
+      width: 400px;
+      height: 100%;
+      margin: 0px 50px;
+    }
+
+    .friend-image-container {
+      height: 175px;
+      width: 175px;
+      float: left;
+      padding: 10px;
+    }
+    .friend-image {
+      width: 100%;
     }
 
 

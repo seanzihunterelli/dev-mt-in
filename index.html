@@ -10,124 +10,49 @@
 	<title>DevMtin</title>
 </head>
 
-<body ng-controller="mainCtrl">
+<body>
 <div class="container">
-<header>
-	<div class="heading">
-		<a class="menu">
-			<img class="menuitem" src="images/icons/search.svg" />
+
+	<header>
+		<div class="heading">
+			<a class="menu">
+				<img class="menuitem" src="images/icons/search.svg" />
+			</a>
+			<div class="page-title">
+				<span class="title-text">DevMountain</span>
+			</div>
+			<a href=# class="menu">
+				<img class="menuitem" src="images/icons/ham.svg" />
+			</a>
+		</div>
+	</header>
+	<ui-view>
+
+
+
+	</ui-view>
+	<footer>
+		<a ui-sref="myfriends" class="navbar" id="view-friends">
+			<span class="navbuttons">View Friends</span>
 		</a>
-		<div class="page-title">
-			<span class="title-text">DevMountain</span>
-		</div>
-		<a href=# class="menu">
-			<img class="menuitem" src="images/icons/ham.svg" />
+
+		<a ui-sref="findfriends" class="navbar" id="find-friends">
+			<span class="navbuttons">Find Friends</span>
 		</a>
-	</div>
-</header>
 
-<main class="no-data">
-<div class="left-pane">
-	<div id="welcome">
-		<div>Welcome to <span class="blue">DevMountain</span> Social</div>
-		<div>Add Some Info So Friends Can Find You</div>
-	</div>
-	<div class="enter-info">
-		<input placeholder="Full Name" ng-model="newProfile.fullname"></input>
-		<input placeholder="Tagline" ng-model="newProfile.tagline"></input>
-		<input placeholder="Profile Image Url" ng-model="newProfile.imageurl"></input>
-		<textarea placeholder="Bio" ng-model="newProfile.bio"></textarea>
-		<button class="save-profile" ng-click="updatedProfile()">Save Changes</button>
-	</div>
+		<a ui-sref="updateprofile" class="navbar" id="update-profile">
+			<span class="navbuttons">Update Profile</span>
+		</a>
+	</footer>
 
-</div>
-<div class="right-pane">
-	<img class="rear-triangle" src="images/background.jpg" />
-	<div class="grey-triangle">
-	</div>
-	<div class="blue-shadow">
-	</div>
-	<div class="blue-triangle">
-	</div>
-</div>
-</main>
-<main class="landing-page">
-	<div class="left-pane">
-		<div class="myfullname">
-			<h1>
-			{{myProfile.fullname}}
-			</h1>
-		</div>
-		<div class="mytagline">
-			{{myProfile.tagline}}
-		</div>
-		<div class="mybio">
-			{{myProfile.bio}}
-		</div>
-	</div>
-	<div class="right-pane">
-		<img class="rear-triangle" src="images/background.jpg" />
-		<div class="grey-triangle">
-		</div>
-		<div class="blue-shadow">
-		</div>
-		<img ng-src="{{myProfile.imageurl}}" class="front-triangle"/>
-		<div class="blue-triangle" id="profile-triangle">
-		</div>
-	</div>
-</main>
-<main class="friends-view">
-	<div class="left-pane">
-		left view friends
-	</div>
-	<div class="right-pane">
-		right view friends
-	</div>
-</main>
-<main class="search-friends">
-	<div class="left-pane">
-		left search friends
-	</div>
-	<div class="right-pane">
-		right search friends
-	</div>
-</main>
-<main class="friend-profile">
-	<div class="left-pane">
-		left friend profile
-	</div>
-	<div class="right-pane">
-		right friend profile
-	</div>
-</main>
-<main class="update-profile">
-	<div class="left-pane">
-		left update profile
-	</div>
-	<div class="right-pane">
-		right update profile
-	</div>
-</main>
-
-<footer>
-<a href=# class="navbar" id="view-friends">
-<span class="navbuttons">View Friends</span>
-</a>
-<a href=# class="navbar" id="find-friends">
-<span class="navbuttons">Find Friends</span>
-</a>
-<a href=# class="navbar" id="update-profile">
-<span class="navbuttons">Update Profile</span>
-</a>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<script src="js/animations.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
-<script src="js/app.js"></script>
-<script src="js/controller.js"></script>
-<script src="js/service.js"></script>
-<script src="sweetalert-master/dist/sweetalert.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="js/animations.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="js/service.js"></script>
+	<script src="sweetalert-master/dist/sweetalert.min.js"></script>
 </div>
 </body>
 </html>

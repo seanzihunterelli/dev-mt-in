@@ -1,0 +1,38 @@
+<main class="friends-view">
+  <div class="left-pane">
+    <div class="myfullname">
+      <h1>
+        <!-- {{myProfile.fullname}} -->
+        Sean Hoffman
+      </h1>
+    </div>
+    <div class="mytagline">
+      <!-- {{myProfile.tagline}} -->
+      Some awesome tagline about you
+    </div>
+    <div class="mybio">
+      <!-- {{myProfile.bio}} -->
+      Lorizzle ma nizzle dolor sit amet, brizzle adipiscing go to hizzle. Nullizzle black velizzle, hizzle volutpat, boofron fo, fo shizzle vizzle, go to hizzle. Hizzle i'm in the shizzle yippiyo. Sed erizzle. Fo shizzle izzle dolor dapibus yo mamma tempizzle doggy. Maurizzle dawg nibh fo shizzle my nizzle you son of a bizzle. Ghetto in dizzle. Black mofo phat nisi. In get down get down habitasse platea dictumst. Donec dapibizzle. Crazy tellus things, pretium doggy, mattizzle izzle, eleifend vitae, nunc. Boofron pot. Integizzle semper phat sed purizzle.
+
+      Praesent get down get down turpizzle izzle izzle shit boofron. Fo shizzle my nizzle daahng dawg tortizzle vizzle gangsta. Stuff malesuada ornare rizzle. Morbi ass, yo mamma its fo rizzle bibendizzle dang, magna izzle vestibulum ligula, for sure bizzle justo bizzle get down get down mammasay mammasa mamma oo sa. Maecenas dang elizzle sit amet daahng dawg adipiscing sagittis
+    </div>
+  </div>
+  <div class="right-pane">
+    <div class="friend-nav">
+      <button>ASCENDING</button>
+      <h4>Friends</h4>
+      <a class="menu">
+        <img class="menuitem" src="images/icons/search.svg" />
+      </a>
+    </div>
+    <div class="friends-list">
+    <div class="friend-image-container" ng-repeat="friend in myFriends">
+        <img class="friend-image" ng-src="{{friend.imageurl}}" />
+      </div>
+      <div class="view-friend">
+        {{friend.name}}
+        <!-- <button>View Profile</button> -->
+      </div>
+    </div>
+  </div>
+</main>

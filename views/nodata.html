@@ -1,0 +1,30 @@
+<main class="no-data">
+  <div class="left-pane">
+    <div id="welcome">
+      <div>Welcome to <span class="blue">DevMountain</span> Social</div>
+
+      <div>Add Some Info So Friends Can Find You</div>
+    </div>
+    <div class="enter-info">
+      <input placeholder="First and Last Name" ng-model="newProfile.fullname"></input>
+
+      <input placeholder="Tagline" ng-model="newProfile.tagline"></input>
+
+      <input placeholder="Profile Image Url" ng-model="newProfile.imageurl"></input>
+
+      <textarea placeholder="Bio" ng-model="newProfile.bio"></textarea>
+
+      <button class="save-profile" ng-click="updatedProfile()" ui-sref="myprofile">Save Changes</button>
+    </div>
+
+  </div>
+  <div class="right-pane">
+    <img class="rear-triangle" />
+
+    <div class="blue-shadow">
+    </div>
+
+    <div class="blue-triangle">
+    </div>
+  </div>
+</main>
